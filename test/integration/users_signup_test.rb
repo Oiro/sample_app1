@@ -4,6 +4,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
+  
 
   test "invalid signup information" do
 	get signup_path
@@ -28,8 +29,12 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 									password: "password",
 								password_confirmation: "password" }
 	end
+		
 		assert_template 'users/show'
+		assert is_logged_in?
 		# assert_not flash.FILL_IN
 		assert_not flash.empty?
   end
+
+  
 end
