@@ -7,6 +7,6 @@ ActionMailer::Base.smtp_settings = {
       :domain 				=> "gmail.com",
       :user_name            => ENV['mokeroke@gmail.com'],
       :password             => ENV['bounty'],
-      :authentication       => :plain,
+      :authentication       => :login,
       :enable_starttls_auto => true
 }

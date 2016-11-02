@@ -65,10 +65,10 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => "gmail.com",
+      :domain               => "mokeroke@gmail.com",
       :user_name            => ENV['mokeroke@gmail.com'],
       :password             => ENV['bounty'],
-      :authentication       => :plain,
+      :authentication       => :login,
       :enable_starttls_auto => true
 }
   # Ignore bad email addresses and do not raise email delivery errors.
