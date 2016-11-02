@@ -1,0 +1,1 @@
+# config.gem "ambethia-smtp-tls", :lib => "smtp-tls", :source => "http://gems.github.com/"
