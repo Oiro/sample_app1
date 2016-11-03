@@ -9,7 +9,7 @@
 #   email: MyString
 michael:
   name: Michael Example
-  email: mhartl@example.com
+  email: michael@example.com
   password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
@@ -21,7 +21,7 @@ archer:
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
-
+  
 lana:
   name: Lana Kane
   email: hands@example.gov
@@ -35,11 +35,10 @@ mallory:
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
-  
 
 <% 30.times do |n| %>
 user_<%= n %>:
-  name: <%= "User #{n}" %>
+  name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
   activated: true
