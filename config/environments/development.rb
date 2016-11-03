@@ -50,7 +50,7 @@ Rails.application.configure do
         :enable_starttls_auto => true
 }
   config.action_mailer.perform_caching = false
-  ActionMailer::Base.delivery_method = :smtp
+ 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
