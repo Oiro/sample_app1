@@ -11,9 +11,9 @@ ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.raise_delivery_errors = true
 ActionMailer::Base.server_settings = {
     :address        => 'smtp.gmail.com',
-    :domain         => '<your domain>',
+    :domain         => 'mokeroke@gmail.com',
     :port           => 587,
-    :user_name      => '<your gmail>',
-    :password       => '<your password>',
-    :authentication => :plain
+    :user_name      => 'mokeroke@gmail.com',
+    :password       => 'bounty',
+    :authentication => :login
 }
