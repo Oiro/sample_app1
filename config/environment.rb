@@ -9,11 +9,11 @@ Rails.application.initialize!
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.raise_delivery_errors = true
-ActionMailer::Base.server_settings = {
-    :address        => 'smtp.gmail.com',
-    :domain         => 'mokeroke@gmail.com',
-    :port           => 587,
-    :user_name      => 'mokeroke@gmail.com',
-    :password       => 'bounty',
-    :authentication => :login
-}
+# ActionMailer::Base.server_settings = {
+#     :address        => 'smtp.gmail.com',
+#     :domain         => 'mokeroke@gmail.com',
+#     :port           => 587,
+#     :user_name      => 'mokeroke@gmail.com',
+#     :password       => 'bounty',
+#     :authentication => :login
+# }
